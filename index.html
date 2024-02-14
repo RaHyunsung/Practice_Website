@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Health & Steroids</title>
+</head>
+<body>
+    <div class="__Paragraph">
+        <center>
+            <br>
+            <div style="animation-duration: 0.09s;">
+                <a class="title">
+                    Health & Steroid
+                </a>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div style="animation-duration: 0.5s;">
+                <a> This website was made by 
+                    <a>Hyunsung Ra</a> 
+                    <a class="link" style="text-decoration: underline;" href="mailto:rah@wsc.school.nz">rah@wsc.school.nz.</a>
+                </a><br>
+            </div>
+            <div style="animation-duration: 1s;">
+                <a class="">This website is about drug, </a>
+                    <a class="link" href="https://en.wikipedia.org/wiki/Steroid" style="text-decoration: underline; font-weight: bold;" target="_blank">steroid</a>
+                </a>
+                <br>
+                <p>You can highlight by putting your mouse-pointer on those texts</p>
+            </div>
+        </center>
+        <br>
+        <div style="animation-duration: 1.5s;">
+            <hr>
+            <a class="subtitle">
+                What is steroid?
+            </a>
+            <br>
+            <a class="">
+                <a>Steroids are a man-made version of 
+                    <a>hormones normally produced by the</a> 
+                    <a>adrenal glands which are 2 small glands</a> 
+                    <a>found above the kidneys.</a></a><br>
+                <a>Steroids reduce redness and swelling (inflammation).</a> <a>This can help with <a>inflammatory conditions such as asthma and eczema.</a>
+            </a>
+            <br>
+        </div>
+        <br>
+        <div style="animation-duration: 2s;">
+            <hr>
+            <a class="subtitle">
+                What is bad thing of steroid?
+            </a>
+            <br>
+            <a>Athletes often misuse steroids <a style="font-weight: bold;">to strengthen their muscles</a>,<a> and it is a doping drug.<br>
+                <a>Therefore, it is forbidden for athletes to take them.</a><br>
+                <a>There are serious side effects.</a><a> A typical side effect is Cushing syndrome as a chronic side effect.</a>
+            </a>
+            <br>
+            <a>As the health club population has recently increased, </a><a>cases of illegally purchasing and using anabolic steroids for rapid muscle mass increase and side effects are increasing.</a><br>
+        </div>
+        <br>
+        <div style="height: 100%; animation-duration: 2.5s;">
+            <hr>
+            <a class="subtitle">
+                Other Informations
+            </a>
+            <br>
+            <a class="">This is a
+                <a class="link" style="text-decoration: underline;" href="https://en.wikipedia.org/wiki/Steroid"> wiki</a> 
+                <a>page about steroid drug</a>
+            </a>
+            <button id="PreviewToggleButton" onclick="TogglePreview()">Show Preview</button>
+            <br>
+            <div id="Preview" style="display: none; height: 100%;">
+                <iframe src="https://en.wikipedia.org/wiki/Steroid" style="border: none; width: 100%; height: 60%;"></iframe>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <footer>
+        <h3>Sources:</h3>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Trimethyl_steroid-nomenclature.svg">https://upload.wikimedia.org/wikipedia/commons/f/fa/Trimethyl_steroid-nomenclature.svg</a><br>
+        <a href="https://cdn.britannica.com/30/6530-004-798906B4/functions-vertebrates-steroid-hormones.jpg">https://cdn.britannica.com/30/6530-004-798906B4/functions-vertebrates-steroid-hormones.jpg</a><br>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbPyJBP3UIjk-bWghVJQO5xaemzxOM-5TDg&usqp=CAU">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbPyJBP3UIjk-bWghVJQO5xaemzxOM-5TDg&usqp=CAU</a><br>
+        <a href="https://saylordotorg.github.io/text_the-basics-of-general-organic-and-biological-chemistry/section_20/1f14c75ba7e8b8b927bda61c3749fd7c.jpg">https://saylordotorg.github.io/text_the-basics-of-general-organic-and-biological-chemistry/section_20/1f14c75ba7e8b8b927bda61c3749fd7c.jpg</a><br>
+        <a href="https://www.researchgate.net/publication/264430398/figure/fig1/AS:784290505822214@1564000836880/Basic-steroid-structure-showing-a-fully-saturated-21-carbon-steroid-with-the-alphabetical.png">https://www.researchgate.net/publication/264430398/figure/fig1/AS:784290505822214@1564000836880/Basic-steroid-structure-showing-a-fully-saturated-21-carbon-steroid-with-the-alphabetical.png</a>
+        <br>
+    </footer>
+    <script>
+        var iframeContainer = document.getElementById("Preview");
+        var buttonText = document.getElementById("PreviewToggleButton");
+        var index = 0;
+        var images = [
+            "url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Trimethyl_steroid-nomenclature.svg')",
+            "url('https://cdn.britannica.com/30/6530-004-798906B4/functions-vertebrates-steroid-hormones.jpg')",
+            "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbPyJBP3UIjk-bWghVJQO5xaemzxOM-5TDg&usqp=CAU')",
+            "url('https://saylordotorg.github.io/text_the-basics-of-general-organic-and-biological-chemistry/section_20/1f14c75ba7e8b8b927bda61c3749fd7c.jpg')",
+            "url('https://www.researchgate.net/publication/264430398/figure/fig1/AS:784290505822214@1564000836880/Basic-steroid-structure-showing-a-fully-saturated-21-carbon-steroid-with-the-alphabetical.png')"
+        ];
+        
+        function TogglePreview() {
+            if (iframeContainer.style.display === "none") {
+                iframeContainer.style.display = "block";
+                buttonText.textContent = "Hide Preview"
+            } else {
+                iframeContainer.style.display = "none";
+                buttonText.textContent = "Show Preview"
+            }
+        }
+        function changeBackground() {
+            document.body.style.backgroundImage = images[index];
+            index = (index + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 2000);
+    </script>
+</body>
+</html>
