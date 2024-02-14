@@ -1,0 +1,123 @@
+.__Paragraph {
+    width: 100%;
+    height: 100%;
+}
+
+.__Paragraph div {
+    width: 100%;
+    animation: SlideYIn 1s;
+}
+
+.__Paragraph a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.__Paragraph a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.__Paragraph a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(50, 165, 34, 50%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.__Paragraph a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    animation: SlideYIn 1s;
+}
+
+.__Paragraph a:hover {
+    font-weight: bold;
+}
+
+.__Paragraph .link::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.__Paragraph .link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.__Paragraph .link::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(30, 27, 197, 0.5);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.__Paragraph .link {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+body {
+    background: rgba(255, 255, 255) url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Trimethyl_steroid-nomenclature.svg") no-repeat center center / 30% auto;
+    opacity: 0.8;
+    height: 100%;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: white;
+}
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
+
+@keyframes SlideYIn {
+    0% { transform: translateY(1000px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes SlideXIn {
+    0% { transform: translateX(-1000px); }
+    100% { transform: translateX(0); }
+}
+
+.typewriter {
+    animation: SlideXIn 3s;
+}
